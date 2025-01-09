@@ -2,8 +2,8 @@
 # Script to display listening ports with PID and program name
 
 echo "Active Internet connections (only servers)"
-ss -tuln -p
+netstat -plnt
 
 echo ""
 echo "Active UNIX domain sockets (only servers)"
-ss -xln -p
+netstat -px
