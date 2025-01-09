@@ -1,9 +1,3 @@
-#!/bin/bash
-# Script to display listening ports with PID and program name
-
-echo "Active Internet connections (only servers)"
-ss -tuln -p | awk 'NR==1 || /LISTEN/' 
-
-echo ""
-echo "Active UNIX domain sockets (only servers)"
-ss -xln -p | awk 'NR==1 || /LISTEN/'
+#!/usr/bin/env bash
+# This script displays Active Internet connections
+netstat -lp
