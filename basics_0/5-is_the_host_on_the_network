@@ -5,3 +5,8 @@ if [ -z "$1" ]; then
     exit 1
 fi
 ping -c 5 "$1"
+if [ $? -eq 0 ]; then
+    echo "$1 is alive"
+else
+    echo "$1 is unreachable"
+fi
