@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#Bash script that displays listening port and PID and name of the program
+# Listen for incoming connections
 
-netstat -lp
+netstat -an -p tcp 
