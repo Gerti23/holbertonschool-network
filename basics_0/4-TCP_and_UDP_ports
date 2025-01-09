@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-# Script to display listening ports with PID and program name
+#Bash script that displays listening port and PID and name of the program
 
-echo "Active Internet connections (only servers)"
-netstat -plnt
-
-echo ""
-echo "Active UNIX domain sockets (only servers)"
-netstat -px
+netstat -lp
